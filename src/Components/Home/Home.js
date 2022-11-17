@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 const Home = () => {
   const [events, setEvents ] = useState([]);
   useEffect(()=>{
-    fetch("http://localhost:5055/allEvents")
+    fetch("https://tranquil-beyond-15676.herokuapp.com/allEvents")
   .then(res=>res.json())
   .then(data=>{
     setEvents(data); 

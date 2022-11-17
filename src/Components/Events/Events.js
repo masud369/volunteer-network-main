@@ -5,7 +5,7 @@ import { Card } from "react-bootstrap";
 const Events = ({ event }) => {
 
 const deleteEvent = (id)=>{
-  fetch(`http://localhost:5055/event/${id}`,{ 
+  fetch(`https://tranquil-beyond-15676.herokuapp.com/event/${id}`,{ 
     method: 'DELETE'
    })
 }

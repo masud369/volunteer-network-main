@@ -28,7 +28,7 @@ console.log(imgUrl)
   const onSubmit = (data) => {
     console.log(data)
     const imageDetails = {name:data.name,imageUrl:imgUrl}
-    fetch('http://localhost:5055/addevent',{
+    fetch('https://tranquil-beyond-15676.herokuapp.com/addevent',{
       method:'POST',
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(imageDetails)
